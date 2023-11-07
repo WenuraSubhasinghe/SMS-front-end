@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
-import { AppRoutingModule } from './app-routing.module';
+import { RouterModule } from '@angular/router';
+import { ComponentsModule } from './components/components.module';
 import { AppComponent } from './app.component';
 
 @NgModule({
@@ -10,7 +10,8 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    RouterModule,
+    ComponentsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
